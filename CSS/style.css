@@ -1,0 +1,517 @@
+html {
+  --primary-color: #ffcc00;
+  --secondary-color: #471396;
+  --defualt-font: "Roboto", sans-serif;
+  --side-font: "Amatic SC", sans-serif;
+  --primary-bg: white;
+  --secondary-bg: rgb(235, 235, 235);
+  --third-bg: rgb(190, 190, 190);
+}
+body {
+  overflow-x: hidden;
+}
+::selection {
+  color: var(--primary-bg);
+  background-color: var(--secondary-color);
+}
+nav {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  background-color: var(--secondary-bg);
+  transform: translateY(-95px);
+  transition: all 500ms ease-in-out;
+}
+.navbar-nav {
+  padding-top: 20px !important;
+}
+.nav-link {
+  font-weight: 500;
+}
+.navbar-brand {
+  position: relative;
+  color: var(--secondary-color);
+  transition: all 400ms;
+}
+.navbar-brand::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: var(--primary-color);
+  height: 3px;
+  top: 0;
+  right: 0;
+  transition: all 400ms;
+}
+.navbar-brand::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: var(--primary-color);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: all 400ms;
+}
+.navbar-brand:hover {
+  color: var(--primary-color);
+}
+.navbar-brand:hover::before {
+  background-color: var(--secondary-color);
+}
+.navbar-brand:hover::after {
+  background-color: var(--secondary-color);
+}
+#dark-mode {
+  border: 0;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--secondary-color);
+  width: 100%;
+  padding-right: 15px;
+  text-align: end;
+}
+#light-mode {
+  border: 0;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--secondary-color);
+  width: 100%;
+  padding-right: 15px;
+  text-align: end;
+}
+.navbar-toggler:focus {
+  box-shadow: 1px 1px 0 0.25rem var(--secondary-color),
+    -1px -1px 0 0.25rem var(--secondary-color);
+}
+header {
+  background-image: url(../Images/HomeBg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100%;
+  background-blend-mode: multiply;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home-text {
+  text-align: center;
+  opacity: 0;
+  transition: opacity 500ms ease-out;
+}
+#home-text h6 {
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+}
+#home-text h1 {
+  color: white;
+  font-family: var(--side-font);
+  font-size: 76px;
+  font-weight: 700;
+}
+#home-text h3 {
+  color: white;
+  margin-top: 5px;
+  font-size: 40px;
+  font-weight: 400;
+}
+#element {
+  color: #ffcc00;
+  font-family: var(--side-font);
+  margin-top: 5px;
+  font-size: 40px;
+  font-weight: 400;
+  animation-name: foodColor;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+#home-text h4 {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+#book-table {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #471396;
+}
+#book-table:hover {
+  color: black;
+  background-color: white;
+}
+#about-us {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #ffcc00;
+  background-color: transparent;
+}
+#about-us:hover {
+  color: black;
+  background-color: #ffcc00;
+}
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+#our-prof {
+  top: 20px;
+  left: 30px;
+  font-family: var(--side-font);
+  color: var(--secondary-color);
+  font-size: 32px;
+  font-weight: 700;
+}
+.chef1 {
+  background-color: var(--primary-bg);
+  position: relative;
+}
+.chef2 {
+  background-color: var(--secondary-bg);
+  position: relative;
+}
+.chef3 {
+  background-color: var(--third-bg);
+  position: relative;
+}
+.hidden-frame {
+  opacity: 0;
+}
+.show-frame {
+  opacity: 1;
+}
+.hidden-chef {
+  opacity: 0;
+}
+.show-chef {
+  transform: translateY(20px);
+  opacity: 1;
+}
+.hidden-name {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 700ms ease-in-out;
+}
+.show-name {
+  opacity: 1;
+  transform: translateX(0px);
+}
+.hidden-text {
+  opacity: 0;
+  transform: translate(100px, 100px);
+  transition: all 700ms ease-in-out;
+}
+.show-text {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.hidden-icons {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+.show-icons {
+  opacity: 1;
+  transform: translateX(0px);
+}
+#chef1-photo {
+  width: 100%;
+  border: 8px var(--secondary-color) solid;
+  border-radius: 10px;
+  transition: all 400ms ease-in-out;
+}
+#chef2-photo {
+  width: 100%;
+  border: 8px var(--secondary-color) solid;
+  border-radius: 10px;
+  transition: all 400ms ease-in-out;
+}
+#chef3-photo {
+  width: 100%;
+  border: 8px var(--secondary-color) solid;
+  border-radius: 10px;
+  transition: all 400ms ease-in-out;
+}
+#chef1-photo img {
+  width: 100%;
+  border-radius: 10px;
+  transition: all 1s ease-in-out;
+}
+#chef2-photo img {
+  width: 100%;
+  border-radius: 10px;
+  transition: all 1s ease-in-out;
+}
+#chef3-photo img {
+  width: 100%;
+  border-radius: 10px;
+  transition: all 1s ease-in-out;
+}
+#chef1-text {
+  padding-top: 30px;
+}
+#chef2-text {
+  padding-top: 30px;
+}
+#chef3-text {
+  padding-top: 30px;
+}
+.chefs-social {
+  padding-top: 30px;
+}
+.chefs-social a {
+  width: 70px;
+  height: 70px;
+  font-size: 40px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  color: var(--primary-bg);
+  transition: all 400ms ease-in-out;
+}
+.chefs-social a:hover {
+  filter: brightness(1.4);
+}
+.stars i {
+  color: gold;
+  font-size: 24px;
+}
+#satisfied-people {
+  background-image: url(../Images/vecteezy_japanese-food-with-sushi-in-a-plate_7095071.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: #471396;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  color: white;
+}
+.my-border {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: white 5px solid;
+  border-radius: 50%;
+}
+.hidden-stats {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 800ms ease-out;
+}
+.show-stats {
+  transform: translateY(0px);
+  opacity: 1;
+}
+#menu {
+  background-color: var(--primary-bg);
+}
+#menu-header {
+  font-size: 64px;
+  font-family: var(--side-font);
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+#clients-feedback {
+  background-color: var(--secondary-bg);
+}
+.dish {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border: 5px var(--secondary-color) solid;
+}
+.hidden-dish {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 700ms ease-in-out;
+}
+.show-dish {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.dish:hover img {
+  transform: scale(1.2);
+}
+.dish:hover .dish-layer {
+  top: 0px;
+}
+.dish img {
+  width: 100%;
+  transition: all 400ms ease-in-out;
+}
+.dish-layer {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 400ms ease-in-out;
+}
+.list {
+  columns: 350px;
+}
+.hidden-prof {
+  opacity: 0;
+  transform: translate(70px, 0);
+  transition: all 1200ms ease-in-out;
+}
+.show-prof {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.food-name {
+  color: #ffcc00;
+  font-size: 72px;
+  font-family: var(--side-font);
+  font-weight: 700;
+}
+.clients-review > div {
+  border-radius: 10px;
+  border: 6px solid var(--secondary-color);
+  position: relative;
+}
+.ribbon {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-bg);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 20px 0;
+}
+.ribbon {
+  --s: 1.8em;
+  --d: 0.8em;
+  --c: 0.8em;
+
+  padding: 0 calc(var(--s) + 0.5em) var(--d);
+  line-height: 1.8;
+  background: conic-gradient(
+        at left var(--s) bottom var(--d),
+        #0000 25%,
+        #0008 0 37.5%,
+        #0004 0
+      )
+      0 /50% 100% no-repeat,
+    conic-gradient(
+        at right var(--s) bottom var(--d),
+        #0004 62.5%,
+        #0008 0 75%,
+        #0000 0
+      )
+      100%/50% 100% no-repeat;
+  clip-path: polygon(
+    0 var(--d),
+    var(--s) var(--d),
+    var(--s) 0,
+    calc(100% - var(--s)) 0,
+    calc(100% - var(--s)) var(--d),
+    100% var(--d),
+    calc(100% - var(--c)) calc(50% + var(--d) / 2),
+    100% 100%,
+    calc(100% - var(--s) - var(--d)) 100%,
+    calc(100% - var(--s) - var(--d)) calc(100% - var(--d)),
+    calc(var(--s) + var(--d)) calc(100% - var(--d)),
+    calc(var(--s) + var(--d)) 100%,
+    0 100%,
+    var(--c) calc(50% + var(--d) / 2)
+  );
+  background-color: var(--secondary-color);
+  width: fit-content;
+}
+.clients-review div img {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+#our-clients {
+  font-size: 48px;
+  font-family: var(--side-font);
+  font-weight: 600;
+  color: var(--secondary-color);
+  padding-bottom: 20px;
+}
+.carousel-item span {
+  font-family: var(--side-font);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+.carousel-indicators [data-bs-target] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  filter: brightness(1.5);
+}
+.hidden-slides {
+  opacity: 0;
+  transform: scale(0.2);
+  transition: all 600ms ease-in-out;
+}
+.show-slides {
+  opacity: 1;
+  transform: scale(1);
+}
+#contact {
+  background-color: var(--third-bg);
+}
+#contact-header {
+  font-size: 64px;
+  font-family: var(--side-font);
+  font-weight: 600;
+  color: var(--secondary-color);
+  text-align: center;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem var(--secondary-color);
+}
+.form-select:focus {
+  box-shadow: 0 0 0 0.25rem var(--secondary-color);
+}
+#contact i {
+  color: var(--secondary-color);
+  font-size: 24px;
+}
+.hidden-contact {
+  opacity: 0;
+  transition: all 1000ms ease-out;
+}
+.show-contact {
+  opacity: 1;
+}
+footer {
+  background-color: var(--primary-bg);
+}
+.btn-prime {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #ffcc00;
+  background-color: transparent;
+}
+.btn-prime:hover {
+  color: black;
+  background-color: #ffcc00;
+}
+.btn-second {
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #471396;
+  background-color: transparent;
+}
+.btn-second:hover {
+  color: white;
+  background-color: #471396;
+}

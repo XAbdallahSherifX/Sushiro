@@ -1,0 +1,74 @@
+@media (min-width: 992px) {
+  .navbar-nav {
+    padding-top: 0 !important;
+  }
+  #dark-mode {
+    width: auto;
+    padding-right: 0px;
+    text-align: none;
+  }
+  #light-mode {
+    width: auto;
+    padding-right: 0px;
+    text-align: none;
+  }
+  .nav-link {
+    position: relative;
+  }
+  .nav-link::before {
+    content: "";
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: 10%;
+    right: 100%;
+    transition: all 400ms;
+  }
+  .nav-link:hover::before {
+    right: 0;
+  }
+}
+@media (min-width: 1200px) {
+  #chef1-photo {
+    width: 80%;
+  }
+  #chef2-photo {
+    width: 80%;
+  }
+  #chef3-photo {
+    width: 80%;
+  }
+  .show-chef {
+    transform: translate(30px, 30px);
+  }
+  #chef1-photo img {
+    width: 100%;
+    height: 100%;
+  }
+  #chef2-photo img {
+    width: 100%;
+    height: 100%;
+  }
+  #chef3-photo img {
+    height: 100%;
+    width: 100%;
+  }
+  .chef1 {
+    background-color: var(--primary-bg);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  .chef2 {
+    background-color: var(--secondary-bg);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  .chef3 {
+    background-color: var(--third-bg);
+    position: relative;
+    z-index: 4;
+  }
+}

@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/media.css" />
+    <title>Sushiro</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navit">
+    <nav id="navit" class="fixed-top navbar navbar-expand-lg py-2">
+      <div class="container">
+        <a class="navbar-brand fs-2 p-0 m-0" href="#home">Sushiro</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item fs-5 px-4 py-2">
+              <a
+                class="nav-link m-0 py-2 px-0 overflow-hidden text-center active text-black"
+                aria-current="page"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item fs-5 px-4 py-2">
+              <a
+                class="nav-link m-0 py-2 px-0 overflow-hidden text-center text-black"
+                href="#chefs"
+                >Chefs</a
+              >
+            </li>
+            <li class="nav-item fs-5 px-4 py-2">
+              <a
+                class="nav-link m-0 py-2 px-0 overflow-hidden text-center text-black"
+                href="#menu"
+                >Menu</a
+              >
+            </li>
+            <li class="nav-item fs-5 px-4 py-2">
+              <a
+                class="nav-link m-0 py-2 px-0 overflow-hidden text-center text-black"
+                href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <i id="dark-mode" class="fa-solid fa-moon ms-auto"></i>
+          <i id="light-mode" class="fa-solid fa-sun ms-auto d-none"></i>
+        </div>
+      </div>
+    </nav>
+    <header id="home">
+      <div
+        id="home-text"
+        class="container mt-5 d-flex flex-column justify-content-center align-items-center row-gap-2"
+      >
+        <h6>Welcome to</h6>
+        <h1 id="Sushiro">Sushiro</h1>
+        <h4>
+          We're the biggest, best equipped and most advanced Sushi restaurant
+        </h4>
+        <h3>We Cook <span id="element"></span></h3>
+        <div class="mt-3 d-flex column-gap-3">
+          <a href="#contact" class="text-decoration-none"
+            ><button id="book-table" class="btn py-2 px-3">
+              Book a Table
+            </button></a
+          >
+          <button id="about-us" class="btn py-2 px-3">About Us</button>
+        </div>
+      </div>
+    </header>
+    <main id="chefs">
+      <section class="chef1 section-padding">
+        <h3 id="our-prof" class="position-absolute hidden-prof">
+          Our professional chef :
+        </h3>
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-xl-6 d-flex justify-content-center align-items-center"
+            >
+              <div id="chef1-photo" class="hidden-frame">
+                <img
+                  class="hidden-chef"
+                  src="Images/Chef1.jpeg"
+                  alt="Toji Fushiguro photo"
+                />
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div id="chef1-text">
+                <div class="d-flex justify-content-between hidden-name">
+                  <h1 class="text-black">TOJI FUSHIGURO</h1>
+                  <div
+                    class="stars d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <p class="text-black hidden-text">
+                  Toji Fushiguro is a former member of the Zen'in Clan, he is
+                  known as the "Sorcerer Killer" and is the father of Megumi.
+                  Like Maki, he was born with a Heavenly Restriction, rendering
+                  him unable to use Cursed Techniques. In exchange, he was given
+                  immense physical prowess, and his senses reached a point where
+                  he could still interact with Cursed Spirits. His lack of
+                  Cursed Energy allows him to sneak up on and kill Jujutsu
+                  Sorcerers, and his Inverted Spear of Heaven allows him to
+                  bypass any Cursed Technique. He defeated Gojo and Geto on
+                  their first encounter, bringing Gojo to the brink of death. He
+                  is callous and has little regard for his own family, selling
+                  Megumi to the Zen'in Clan for money and even forgetting his
+                  name. However in his dying moments he asks Gojo to protect
+                  Megumi from being sold.
+                </p>
+                <div class="chefs-social w-100 d-flex justify-content-evenly">
+                  <a href="https://www.facebook.com/" class="hidden-icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/" class="hidden-icons"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                  <a href="https://x.com/" class="hidden-icons"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="chef2 section-padding">
+        <h3 id="our-prof" class="position-absolute hidden-prof">
+          Our professional chef :
+        </h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 d-flex justify-content-center">
+              <div id="chef2-photo" class="hidden-frame">
+                <img
+                  class="hidden-chef"
+                  src="Images/chef2.png"
+                  alt="Satoru Gojo photo"
+                />
+              </div>
+            </div>
+
+            <div class="col-xl-6">
+              <div id="chef2-text">
+                <div class="d-flex justify-content-between hidden-name">
+                  <h1 class="text-black">SATORU GOJO</h1>
+                  <div
+                    class="stars d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                </div>
+                <p class="text-black hidden-text">
+                  Satoru Gojo is a sorcerer working as a teacher at the Tokyo
+                  Prefectural Jujutsu High School. He wields the Six Eyes (六眼,
+                  Rikugan), which minimizes Cursed Energy consumption and
+                  enhances perception, and the Limitless (無下限, Mukagen)
+                  technique, granting atomic-level control over space. Limitless
+                  includes: Infinity (無限, Mugen) (infinite slowing of incoming
+                  objects), Cursed Technique Lapse: Blue (術式 順転 蒼,
+                  Jutsushiki Junten Ao) (a converging void that crushes
+                  targets), Cursed Technique Reversal: Red (術式 反転 赫,
+                  Jutsushiki Hanten Aka) (a repelling force from reversed Cursed
+                  Energy), and Hollow Technique: Purple (虚式 茈, Kyoshiki
+                  Murasaki) (a destructive fusion of Blue and Red that
+                  annihilates matter). His Domain Expansion, Unlimited Void
+                  (無量空処, Muryōkūsho), floods targets with infinite
+                  information, immobilizing them.
+                </p>
+                <div class="chefs-social w-100 d-flex justify-content-evenly">
+                  <a href="https://www.facebook.com/" class="hidden-icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/" class="hidden-icons"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                  <a href="https://x.com/" class="hidden-icons"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="chef3 section-padding">
+        <h3 id="our-prof" class="position-absolute hidden-prof">
+          Our professional chef :
+        </h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 d-flex justify-content-center">
+              <div id="chef3-photo" class="hidden-frame">
+                <img
+                  class="hidden-chef"
+                  src="Images/chef3.png"
+                  alt="Ryomen Sukuna photo"
+                />
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div id="chef3-text">
+                <div class="d-flex justify-content-between hidden-name">
+                  <h1 class="text-black">RYOMEN SUKUNA</h1>
+                  <div
+                    class="stars d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+                <p class="text-black hidden-text">
+                  Ryomen Sukuna, also known as the King of Curses, is one of the
+                  two main antagonists (alongside Kenjaku) of the manga/anime
+                  series Jujutsu Kaisen. He is the master of Uraume, the "twin
+                  brother" of Wasuke Itadori, and the arch-nemesis of his
+                  "grandnephew" Yuji Itadori and Satoru Gojo. Having lived in
+                  jujutsu's golden age, the Heian Era, Sukuna is widely known
+                  and feared as the strongest jujutsu sorcerer in history. A
+                  thousand years ago, he has turned himself into a cursed object
+                  by transferring his soul into his twenty indestructible
+                  fingers. He is resurrected into modern times when Yuji Itadori
+                  eats one of those fingers, making him able to possess the
+                  boy's body. It is later revealed that Wasuke Itadori, Yuji's
+                  grandfather, was the reincarnation of Sukuna's twin brother,
+                  making Yuji his "grandnephew" and descendant. This also
+                  explains why Sukuna is incapable of possessing Yuji's whole
+                  body at will.
+                </p>
+                <div class="chefs-social w-100 d-flex justify-content-evenly">
+                  <a href="https://www.facebook.com/" class="hidden-icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/" class="hidden-icons"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                  <a href="https://x.com/" class="hidden-icons"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section id="menu" class="section-padding">
+      <h1 id="menu-header" class="text-center mb-5">MENU</h1>
+      <div class="container">
+        <div class="list">
+          <div class="dish hidden-dish">
+            <img src="Images/food/Nigiri_Sushi.webp" alt="Nigiri" />
+            <div
+              class="dish-layer d-flex justify-content-center align-items-center"
+            >
+              <h1 class="food-name">Nigiri</h1>
+            </div>
+          </div>
+          <div class="dish hidden-dish">
+            <img src="Images/food/Temaki.webp" alt="Temaki" />
+            <div
+              class="dish-layer d-flex justify-content-center align-items-center"
+            >
+              <h1 class="food-name">Temaki</h1>
+            </div>
+          </div>
+          <div class="dish hidden-dish">
+            <img
+              src="Images/food/image-Lets-Roll-6-Types-of-Sushi-Explained-3-blog.jpg"
+              alt="Sashimi"
+            />
+            <div
+              class="dish-layer d-flex justify-content-center align-items-center"
+            >
+              <h1 class="food-name">Sashimi</h1>
+            </div>
+          </div>
+          <div class="dish hidden-dish">
+            <img src="Images/food/Maki_Sushi.webp" alt="Maki" />
+            <div
+              class="dish-layer d-flex justify-content-center align-items-center"
+            >
+              <h1 class="food-name">Maki</h1>
+            </div>
+          </div>
+          <div class="dish hidden-dish">
+            <img src="Images/food/Gunkan-1x1-1.jpg" alt="Gunkan" />
+            <div
+              class="dish-layer d-flex justify-content-center align-items-center"
+            >
+              <h1 class="food-name">Gunkan</h1>
+            </div>
+          </div>
+          <div class="dish hidden-dish">
+            <img src="Images/food/uramaki.webp" alt="Uramaki" />
+            <div
+              class="dish-layer d-flex justify-content-center align-items-center"
+            >
+              <h1 class="food-name">Uramaki</h1>
+            </div>
+          </div>
+          <div class="dish hidden-dish">
+            <img src="Images/food/makizushi.webp" alt="Makizushi" />
+            <div
+              class="dish-layer d-flex justify-content-center align-items-center"
+            >
+              <h1 class="food-name">Makizushi</h1>
+            </div>
+          </div>
+          <div class="dish hidden-dish">
+            <img
+              src="Images/food/Futomaki_zushi_in_201902.jpg"
+              alt="Futomaki"
+            />
+            <div
+              class="dish-layer d-flex justify-content-center align-items-center"
+            >
+              <h1 class="food-name">Futomaki</h1>
+            </div>
+          </div>
+          <div class="dish hidden-dish">
+            <img src="Images/food/Chirashi_Sushi.webp" alt="Chirashi" />
+            <div
+              class="dish-layer d-flex justify-content-center align-items-center"
+            >
+              <h1 class="food-name">Chirashi</h1>
+            </div>
+          </div>
+          <div class="dish hidden-dish">
+            <img src="Images/food/Inari_Sushi.webp" alt="Inari" />
+            <div
+              class="dish-layer d-flex justify-content-center align-items-center"
+            >
+              <h1 class="food-name">Inari</h1>
+            </div>
+          </div>
+          <div class="dish hidden-dish">
+            <img src="Images/food/Narezushi.webp" alt="Narezushi" />
+            <div
+              class="dish-layer d-flex justify-content-center align-items-center"
+            >
+              <h1 class="food-name">Narezushi</h1>
+            </div>
+          </div>
+          <div class="dish hidden-dish">
+            <img src="Images/food/Oshizushi-Cubes.png" alt="Oshizushi" />
+            <div
+              class="dish-layer d-flex justify-content-center align-items-center"
+            >
+              <h1 class="food-name">Oshizushi</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="satisfied-people" class="section-padding bg-opacity-75">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-3 col-sm-6">
+            <div
+              class="d-flex justify-content-center flex-column align-items-center row-gap-3 hidden-stats"
+            >
+              <div class="my-border">
+                <i class="fa-solid fa-users fs-1"></i>
+              </div>
+              <h2 id="clients">100k+</h2>
+              <h5>Satisfied Clients</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div
+              class="d-flex justify-content-center flex-column align-items-center row-gap-3 hidden-stats"
+            >
+              <div class="my-border">
+                <i class="fa-solid fa-plate-wheat fs-1"></i>
+              </div>
+              <h2 id="dishes">40</h2>
+              <h5>5 Stars Dishes</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div
+              class="d-flex justify-content-center flex-column align-items-center row-gap-3 hidden-stats"
+            >
+              <div class="my-border">
+                <i class="fa-solid fa-motorcycle fs-1"></i>
+              </div>
+              <h2 id="orders">50k+</h2>
+              <h5>Completed Orders</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div
+              class="d-flex justify-content-center flex-column align-items-center row-gap-3 hidden-stats"
+            >
+              <div class="my-border">
+                <i class="fa-solid fa-award fs-1"></i>
+              </div>
+              <h2 id="awardds">48</h2>
+              <h5>Award Won</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="clients-feedback" class="section-padding">
+      <h1 id="our-clients" class="text-center">Our Clients Review:</h1>
+      <div class="container">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators top-100 mt-4">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner clients-review">
+            <div class="carousel-item active hidden-slides">
+              <div class="my-5">
+                <img src="Images/firstClient.jpeg" class="d-block" alt="..." />
+                <div class="ribbon">Momen Abdelhady</div>
+                <p class="text-center container text-black">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Error, quo doloremque? Necessitatibus porro, incidunt eveniet
+                  minima quis nulla voluptatem tempore aliquid corrupti quos
+                  fugiat aperiam ab voluptas quod officia voluptates. Lorem
+                  ipsum dolor sit amet consectetur, adipisicing elit. Est
+                  sapiente quos at qui! Natus aperiam,
+                </p>
+                <div class="my-3 px-5 d-lg-flex justify-content-between">
+                  <h4 class="text-black mt-3">
+                    Favourite Dish : <span>Sashimi</span> and <span>Maki</span>
+                  </h4>
+                  <div class="stars">
+                    <h5 class="text-black d-inline-block mt-3 me-1">Rating:</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item hidden-slides">
+              <div class="my-5">
+                <img src="Images/secondClient.jpeg" class="d-block" alt="..." />
+                <div class="ribbon">Hazem Hosny</div>
+                <p class="text-center container text-black">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Error, quo doloremque? Necessitatibus porro, incidunt eveniet
+                  minima quis nulla voluptatem tempore aliquid corrupti quos
+                  fugiat aperiam ab voluptas quod officia voluptates. Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Error,
+                  maxime debitis? Saepe iste illum repellendus sunt.
+                </p>
+                <div class="my-3 px-5 d-lg-flex justify-content-between">
+                  <h4 class="text-black mt-3">
+                    Favourite Dish : <span>Termaki</span> and
+                    <span>Uramaki</span>
+                  </h4>
+                  <div class="stars">
+                    <h5 class="text-black d-inline-block mt-3 me-1">Rating:</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item hidden-slides">
+              <div class="my-5">
+                <img src="Images/thirdClient.jpeg" class="d-block" alt="..." />
+                <div class="ribbon">Omar Sameh</div>
+                <p class="text-center container text-black">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Error, quo doloremque? Necessitatibus porro, incidunt eveniet
+                  minima quis nulla voluptatem tempore aliquid corrupti quos
+                  fugiat aperiam ab voluptas quod officia voluptates. Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                  eligendi ducimus praesentium? Veniam reprehenderit rem
+                  laudantium.
+                </p>
+                <div class="my-3 px-5 d-lg-flex justify-content-between">
+                  <h4 class="text-black mt-3">
+                    Favourite Dish : <span>Inari</span> and <span>Gunkan</span>
+                  </h4>
+                  <div class="stars">
+                    <h5 class="text-black d-inline-block mt-3 me-1">Rating:</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section-padding">
+      <h1 id="contact-header">Contact Us</h1>
+      <div class="container mt-4">
+        <div class="row gy-5">
+          <div class="col-12 hidden-contact">
+            <div style="width: 100%">
+              <iframe
+                width="100%"
+                height="400"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                ><a
+                  href="https://www.mapsdirections.info/fr/calculer-la-population-sur-une-carte"
+                  >Calculateur de carte de population</a
+                ></iframe
+              >
+            </div>
+          </div>
+          <div class="col-lg-6 hidden-contact">
+            <div id="contact-form">
+              <form>
+                <div class="form-floating mb-4">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput">Email Address</label>
+                </div>
+                <div class="form-floating mb-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingPassword"
+                    placeholder="Password"
+                  />
+                  <label for="floatingPassword">Name</label>
+                </div>
+                <div class="form-floating mb-4">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="floatingPassword"
+                    placeholder="Password"
+                  />
+                  <label for="floatingPassword">Phone Number</label>
+                </div>
+                <div class="form-floating mb-4">
+                  <select
+                    class="form-select"
+                    id="floatingSelect"
+                    aria-label="Floating label select example"
+                  >
+                    <option selected>Order</option>
+                    <option value="Advice">Advice</option>
+                    <option value="Report">Report</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <label for="floatingSelect">Subject</label>
+                </div>
+                <div class="form-floating mb-4">
+                  <textarea
+                    class="form-control"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea2"
+                    style="height: 100px"
+                  ></textarea>
+                  <label for="floatingTextarea2">Comment</label>
+                </div>
+                <button id="submit" type="submit" class="btn btn-prime btn-second py-2 px-3 w-100">Submit</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6 hidden-contact">
+            <div class="px-5 mb-4">
+              <h1 class="mb-3 text-black">Our Address:</h1>
+              <h5 class="text-black ms-3">
+                <i class="fa-solid fa-location-dot me-2"></i>A108 Adam Street,
+                New York, NY 535022
+              </h5>
+            </div>
+            <div class="px-5 mb-4">
+              <h1 class="mb-3 text-black">Call Us :</h1>
+              <h5 class="text-black ms-3">
+                <i class="fa-solid fa-phone-volume me-2"></i>+1 5589 55488 55
+              </h5>
+            </div>
+            <div class="px-5 mb-4">
+              <h1 class="mb-3 text-black">Email Us :</h1>
+              <h5 class="text-black ms-3">
+                <i class="fa-regular fa-envelope me-2"></i>Example@ex.com
+              </h5>
+            </div>
+            <div class="px-5">
+              <h1 class="mb-3 text-black">Chat With Us :</h1>
+              <h5 class="text-black ms-3">
+                <i class="fa-brands fa-x-twitter me-2"></i>Sushiro_Offical
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="py-5">
+      <p class="mb-3 text-center text-black">This Project is a Demo.</p>
+      <p class="text-center text-black">Copyright © 2025 Abdallah Sherif. All rights reserved. </p>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/app.js"></script>
+  </body>
+</html>
