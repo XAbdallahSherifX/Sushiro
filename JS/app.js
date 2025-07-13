@@ -112,8 +112,6 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 };
-console.log(window);
-
 setTimeout(() => {
   var typed = new Typed("#element", {
     strings: [
