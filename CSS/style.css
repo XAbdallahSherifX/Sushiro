@@ -8,6 +8,9 @@ html {
   --third-bg: rgb(190, 190, 190);
   overflow-x: hidden;
 }
+body{
+  overflow-x: hidden;
+}
 .row {
   margin: 0;
 }
@@ -158,7 +161,7 @@ header {
   padding-top: 100px;
   padding-bottom: 130px;
 }
-#our-prof {
+.our-prof {
   top: 20px;
   left: 30px;
   font-family: var(--side-font);
@@ -193,16 +196,16 @@ header {
 }
 .hidden-name {
   opacity: 0;
-  transform: translateX(100px);
+  transform: translateY(50px);
   transition: all 700ms ease-in-out;
 }
 .show-name {
   opacity: 1;
-  transform: translateX(0px);
+  transform: translateY(0px);
 }
 .hidden-text {
   opacity: 0;
-  transform: translate(100px, 100px);
+  transform: translate(0, 100px);
   transition: all 700ms ease-in-out;
 }
 .show-text {
@@ -211,11 +214,11 @@ header {
 }
 .hidden-icons {
   opacity: 0;
-  transform: translateX(-30px);
+  transform: translateY(60px);
 }
 .show-icons {
   opacity: 1;
-  transform: translateX(0px);
+  transform: translateY(0px);
 }
 #chef1-photo {
   width: 100%;
@@ -360,7 +363,7 @@ header {
 }
 .hidden-prof {
   opacity: 0;
-  transform: translate(70px, 0);
+  transform: translate(0px, 40px);
   transition: all 1200ms ease-in-out;
 }
 .show-prof {

@@ -71,4 +71,46 @@
     position: relative;
     z-index: 4;
   }
+  .hidden-chef {
+  opacity: 0;
+}
+.show-chef {
+  transform: translateY(20px);
+  opacity: 1;
+}
+.hidden-name {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 700ms ease-in-out;
+}
+.show-name {
+  opacity: 1;
+  transform: translateX(0px);
+}
+.hidden-text {
+  opacity: 0;
+  transform: translate(100px, 100px);
+  transition: all 700ms ease-in-out;
+}
+.show-text {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.hidden-icons {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+.show-icons {
+  opacity: 1;
+  transform: translateX(0px);
+}
+.hidden-prof {
+  opacity: 0;
+  transform: translate(70px, 0);
+  transition: all 1200ms ease-in-out;
+}
+.show-prof {
+  opacity: 1;
+  transform: translate(0, 0);
+}
 }
