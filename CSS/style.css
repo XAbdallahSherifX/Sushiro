@@ -6,9 +6,10 @@ html {
   --primary-bg: white;
   --secondary-bg: rgb(235, 235, 235);
   --third-bg: rgb(190, 190, 190);
-}
-body {
   overflow-x: hidden;
+}
+.row {
+  margin: 0;
 }
 ::selection {
   color: var(--primary-bg);
